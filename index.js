@@ -16,7 +16,7 @@ module.exports = {
     this.message = message
     this.messageLog.push({
       author: message.author.id,
-      content: message.content,
+      content: message.content.toLowerCase,
       timeStamp: Date.now()
     })
 
@@ -60,7 +60,7 @@ module.exports = {
 
     let msgContent = msg.map(log => log.content).join(' ')
     // message that just sent
-    let currentMsg = this.message.content
+    let currentMsg = this.message.content.toLowerCase
     // check if its same with other messages
 
     // escape regex string
