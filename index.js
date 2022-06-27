@@ -58,14 +58,13 @@ module.exports = {
     // only messages from the current author
     msg = msg.filter(log => log.author == this.message.author.id)
 
-    let msgContent = msg.map(log => log.content).join(' ')
     // message that just sent
     let currentMsg = this.message.content.toLowerCase()
     // check if its same with other messages
 
     // escape regex string
     currentMsg = escapeStringRegexp(currentMsg)
-    let occurance = (msgContent.match(new RegExp(currentMsg, "g")) || []).length
+    let occurance = msg.filter(prev => prev.content == currentMsg).length
 
     if (occurance >= amount) return true
     return false
