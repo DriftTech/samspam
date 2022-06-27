@@ -7,7 +7,7 @@ A spam detector for discord.js bots
 # Installation
 
 ```bash
-npm i @satont/SamSpam
+npm i SamSpam
 ```
 
 # Usage
@@ -36,7 +36,7 @@ CommonJs
 ES6 modules:
 
 ```javascript
-import SamSpam from '@satont/SamSpam'
+import SamSpam from 'SamSpam'
 import { Client } from 'discord.js'
 const client = new Client()
 
@@ -55,4 +55,4 @@ client.on('message', (message) => {
 ```
 
 # Credits
-Original author is rainqubit. Repo: https://github.com/rainqubit/SamSpam
+Original author is rainqubit. Repo: https://github.com/rainqubit/Spamnya

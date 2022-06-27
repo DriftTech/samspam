@@ -1,12 +1,12 @@
 {
-  "name": "@satont/SamSpam",
+  "name": "SamSpam",
   "version": "2.0.1",
   "description": "Spam detector for discord.js bots",
   "main": "index.js",
-  "author": "Satont <satontworldwide@gmail.com>",
+  "author": "DrifTech <drifttech69@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/satont/SamSpam.git"
+    "url": "https://github.com/DriftTech/SamSpam.git"
   },
   "scripts": {
     "postversion": "git push && git push --tags"
